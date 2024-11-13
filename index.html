@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>حط الباسورد يا خول</title>
+</head>
+<body>
+    <center>
+    <h2>حط الباسورد يا خول</h2>
+
+    <form onsubmit="return checkPassword()">
+      <input type="password" id="password" placeholder="Enter Password">
+      <button type="submit">Submit</button>
+    </form>
+    
+    <script>
+      function checkPassword() {
+        const password = document.getElementById('password').value;
+        const correctPassword = "diddy party"; // Set your password here
+    
+        if (password === correctPassword) {
+          window.location.href = "https://yahyamohame.github.io/2/"; // Redirect to protected page
+          return false;
+        } else {
+          alert("Incorrect password");
+          return false;
+        }
+      }
+    </script>
+    </center>
+    <center>
+        <img src="mrsayed.png"
+    </center>
+</body>
+</html>
